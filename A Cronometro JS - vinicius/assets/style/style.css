@@ -1,0 +1,127 @@
+body {
+    background-color: black;
+}
+.pag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95vh;
+}
+.container {
+    max-width: 600px;
+    max-height: 230px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 25, 25);
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+    
+}
+.top-sets {
+    display: flex;
+    height: 100%;
+    margin: 20px;
+    margin-top: 30px;
+
+}
+.voltar {
+    flex: 1;
+}
+.tela-contador {
+    flex: 5;
+}
+.botao-voltar {
+    width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: black;
+    margin-left: 10px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+.botao-voltar p {
+    position: absolute;
+    margin-top: 3px;
+    margin-left: 7px;
+}
+.numero-cron {
+    width: 100%;
+    height: 100%;
+   font-size: 100px;
+   margin-left: 17px;
+}
+
+.botton-botoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contain-botoes {
+    display: flex;
+}
+.start {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.stop {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.reset {
+    width: 100px;
+    height: 40px;
+    background-color: black;
+    margin-bottom: 30px;
+    border-radius: 7px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.tela-inicio {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu {
+    max-height: 200px;
+    max-width: 400px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(36, 25, 25);
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+#botao-crono {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+@media screen and ( max-width: 480px){
+    .numero-cron {
+        font-size: 60px;
+    }
+}

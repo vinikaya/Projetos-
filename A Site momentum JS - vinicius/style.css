@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nomeUsuario input {
+    height: 40px;
+    width: 400px;
+    font-size: 30px;
+    border-radius: 8px;
+}
+.text {
+    height: auto;
+}
+.text h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;    
+}
+.ok {
+    height: auto;
+    width: auto;
+}
+.ok button {
+    margin-top: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.priTela{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #555555;
+}
+.fundo{
+    background-image: url(/627418383dd2cf6ca0030202/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    filter: contrast(115%) brightness(90%);
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mid {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.horas {
+    font-size: 140px;
+    color: white;
+    text-shadow: 1px 2px 1px #555555;
+
+}
+.frase {
+    font-size: 60px;
+    color: white;
+    text-shadow: 1px 1px 1px #555555;
+}
+.botton {
+   color: white;
+   text-shadow: 1px 1px 1px #555555;
+    cursor: pointer;
+}
+.pase {
+    height: 60px;
+}
+
+.pase p {
+    text-align: end;
+    height: 0px;
+    overflow: hidden;
+    transition: all ease .2s;
+}
+.top {
+    width: 90vw;
+    display: flex;
+    justify-content: end;
+    
+}
+.btnvolta {
+    margin-top: 40px;
+    width: 80px;
+    height: 25px;
+    color: rgb(56, 56, 56);
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.btnvolta:hover {
+    border-bottom: 1px solid black;
+}
+.botton:hover .pase p{
+    height: 20px;
+    
+}
+.botton:hover {
+    border-top: 0px solid rgb(163, 110, 110);
+}

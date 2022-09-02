@@ -1,0 +1,217 @@
+*{
+    font-family: serif;
+}
+html {
+    overflow-y: scroll;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+}
+header {
+    flex: 1;
+    background-color: #353535;
+    
+}
+header .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+}
+.lado1{
+    flex: 2;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lado2 {
+    flex: 3;
+}
+select {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+}
+select option {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+form input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 25px;
+    outline: none;
+    width: 230px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+#buscar {
+    background-color: #1e1b1b;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 23px;
+    cursor: pointer;
+}
+#buscar:hover {
+    background-color: rgb(61, 61, 61);
+}
+.espaco {
+    display: flex;
+}
+.reload {
+    background-color: #3d3d3d;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 40px;
+    opacity: 0;
+    transition: opacity .5s linear;
+    margin-left: 5px;
+}
+.lado2 h1 {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+}
+.lado2 h1:hover {
+    color: black;
+}
+
+
+
+.warning {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.model {
+    display: none;
+}
+section {
+    flex: 4;
+    background-color: #1e1b1b;
+    padding: 20px;
+}
+section .charArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 0px;
+    transition: height 5s ease;
+}
+
+section .container {
+    width: 380px;
+    height: 300px;
+    background-color:#353535;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 1em black;
+}
+.topcard {
+    display: flex;
+    color: black;
+}
+
+.img img {
+    margin: 15px;
+    border-radius: 5px;
+    width: auto;
+    height: 160px;
+}
+
+.infos1 .a1 {
+    font-weight: bold;
+    font-size: 20px;
+}
+.infos1 span {
+    color: white;
+}
+.infos1 ,.a2, .gender {
+    font-size: 16px;
+}
+.infos1 .a2 {
+    display: flex;
+    align-items: center;
+}
+.status-alive {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: green;
+    margin-left: 10px;
+}
+.bottoncard {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.bottoncard span {
+    color: white;
+}
+
+@media (max-width:1070px){
+    
+    header .container {
+        flex-direction: column;
+    }
+    html {
+        overflow-y: auto;
+    }
+    .lado1 {
+        margin-top: 30px;
+    }
+}
+@media (max-width:507px){
+
+    .lado1 {
+        display: block;
+    }
+    .lado2 h1 {
+        font-size: 30px;
+    }
+    .lado1 {
+        margin-top: 10px;
+    }
+    .selecao {
+        margin-bottom: 10px;
+    }
+    #entrada-Dados {
+        margin-bottom: 10px;
+    }
+    #buscar{
+        margin-left: 20px;
+        font-size: 19px;
+    }
+    .reload {
+        width: 35px;
+    }
+    .warning {
+        font-size: 25px;
+    }
+
+}

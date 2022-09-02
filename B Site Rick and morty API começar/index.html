@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Infos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<div class="model">
+    <div class="container">
+        <div class="topcard">
+            <div class="img">
+                <img src="" alt="" srcset="">
+            </div>
+            <div class="infos1">
+                <div class="a1"><p><span> ...</span></p></div>
+                <div class="a2"><p>Status: <span>...</span><div class="status-alive"></div></p></div>
+                <div class="gender">Genero: <span>...</span></div>
+            </div>
+        </div>   
+        <div class="bottoncard"> 
+            <div class="especie">Especie: <span>Human</span></div>           
+            <div class="ultimo-local">Localização atual: <span>...</span></div>
+            <div class="local-origem">Local de origen: <span>Earth</span></div>
+        </div>
+        
+    </div>
+</div>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="lado1">
+                    <select class="selecao" id="select">
+                        <option value="character">Personagem</option>
+                        <option value="location">Localização</option>
+                        <option value="epis">Episódios</option>
+                    </select>
+                <form id="entrada-Dados" class="entrada-dados" action="">
+                    <input id="entradaDados" type="text" placeholder="Escreva aqui...">
+                </form>
+                <div class="espaco">
+                    <button id="buscar">Buscar</button>
+                    <button class="reload">&#8635;</button>
+                </div>
+            </div>
+            <div class="lado2">
+                <h1>Rick and Morty Infos</h1>
+            </div>
+        </div>      
+    </header>
+    <section>
+        <div class="warning"></div>
+        <div class="charArea"></div>
+        
+    </section>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
